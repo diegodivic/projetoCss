@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <script src="https://kit.fontawesome.com/ce63af8617.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <title>Diego Vicentini</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo branco.png" alt="Logo Diego Vicentini" height="100" width="100">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/diegodivic"><i id="Github" class="fa-brands fa-github"></i></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/diegodivic/"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/27981354624"><i id= "whatsapp" class="fa-brands fa-whatsapp"></i></a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Diego Vicentini</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    <strong> Aluno Gama Academy explorando e aprendendo sobre o vasto universo dev. Projeto da aula de CSS que ajuda a utilizar as tecnicas aprendidas, alem de 
+                    aumentar o portfolio, e servir de um belo cartão de apresentação. </strong>
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu email">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
